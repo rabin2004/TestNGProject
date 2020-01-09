@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+  <test thread-count="5" name="GroupTest One">
+   <groups>
+  <run>
+  <include name="smoketest">
+  </include>
+  </run>
+  </groups>
+    <classes>
+      <class name="TestNG.NewTest"/>
+      <class name="TestNG.SecondTest"/>
+      </classes>
+      </test>
+     <test thread-count="5" name="GroupTest Two">
+      <groups>
+      <run>
+      <include name="regression test">
+      </include>
+      </run>
+      </groups>
+      <classes>
+      <class name="TestNG.ThirdTest"/>
+      <class name="TestNG.HDFCbank"/>
+    </classes>
+  </test> <!-- GroupTest -->
+</suite> <!-- Suite1 -->

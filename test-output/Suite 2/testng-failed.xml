@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite 2]">
+  <test thread-count="5" name="PackagesTest(failed)">
+    <groups>
+      <run>
+        <include name="smoketest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNG.ThirdTest">
+        <methods>
+          <include name="SignInTab"/>
+        </methods>
+      </class> <!-- TestNG.ThirdTest -->
+      <class name="TestNG.NewTest">
+        <methods>
+          <include name="firstTestVerifyFlightsLink"/>
+        </methods>
+      </class> <!-- TestNG.NewTest -->
+      <class name="TestNG.SecondTest">
+        <methods>
+          <include name="PurchaseFlight"/>
+        </methods>
+      </class> <!-- TestNG.SecondTest -->
+      <class name="SecondTestNG.ThirdTest">
+        <methods>
+          <include name="SignInTab"/>
+        </methods>
+      </class> <!-- SecondTestNG.ThirdTest -->
+      <class name="SecondTestNG.SecondTest">
+        <methods>
+          <include name="PurchaseFlight"/>
+        </methods>
+      </class> <!-- SecondTestNG.SecondTest -->
+      <class name="SecondTestNG.NewTest">
+        <methods>
+          <include name="firstTestVerifyFlightsLink"/>
+        </methods>
+      </class> <!-- SecondTestNG.NewTest -->
+    </classes>
+  </test> <!-- PackagesTest(failed) -->
+</suite> <!-- Failed suite [Suite 2] -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite 3">
+  <test thread-count="5" name="RegressionTest">
+  <groups>
+  <run>
+  <include name={"regression test"}>
+  </include> 
+  </run>
+  </groups>
+    <packages>
+      <package name="SecondTestNG"/>
+      <package name="TestNG"/>
+    </packages>
+     </test> <!-- RegressionTest -->
+    <test thread-count="5" name="smoketest">
+    <groups>
+    <run>
+    <include name="smoketest">
+    </include>
+    </run>
+    </groups>
+      <packages>
+      <package name="SecondTestNG"/>
+      <package name="TestNG"/>
+    </packages>
+    </test> <!-- smoketest -->
+</suite> <!-- Suite 3 -->
